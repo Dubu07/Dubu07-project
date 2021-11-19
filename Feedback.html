@@ -1,0 +1,82 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="Decorations.css">
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+        <script src="JavaScripts.js"></script>
+        <meta charset="utf-8">
+    </head>
+
+    <body>
+        <header>
+            <nav>
+                <a href="index.html" id="home_logo">
+                    <img src="cpu logo.png" alt="cpu logo" id="image1">
+                    <h id="logo_name"> GetDget </h>
+                </a>
+                <a href="Products.html" class="pagelinks"> Products </a>
+                <div class="seperator"></div>
+                <a href="AboutUs.html" class="pagelinks"> About us </a>
+                <div class="seperator"></div>
+                <a href="Services.html" class="pagelinks"> Services </a>
+                <div class="seperator"></div>
+                <a href="Feedback.html" class="pagelinks"> Feedback </a>
+            </nav>
+        </header>
+
+        <main>
+            <section>
+        
+            </section>
+            
+            <article>
+                <div class="container">
+                    <form action="GET" id="FeedForm">
+                        <label for="Ftitle" class="Ilabel">Feedback title :</label>
+                        <input type="text" id="Ftitle" readonly="readonly" placeholder=" Choose your desired title below ( Others for customizable title ) ">
+
+                        <input type="radio" id="Fadvice" name="title" onclick="ShowAdvice()">
+                        <label for="Fadvice"> Advice </label>
+                        <input type="radio" id="Fcomplaint" name="title" onclick="ShowComplaint()">
+                        <label for="Fcomplaint"> Complaint </label>
+                        <input type="radio" id="Fothers" name="title" onclick="ShowOthers()">
+                        <label for="Fothers"> Others </label>
+                        <br>
+                        <div class="hseperator"></div>
+                        <br>
+                        <label for="msg" class="Ilabel">Your Message :</label>
+                        <textarea id="msg" rows="14" cols="45" placeholder="Side note : If feedback title is changed, your text/messages will be cleared !"></textarea>
+                        <br>
+                        <div class="bhseperator"></div>
+                        <br>
+                        <label for="attachment" class="Ilabel"> Add attachment : </label>
+                        <input type="file" id="attachment">
+                        <input type="submit" id="send" value="Send">
+                    </form>
+                </div>
+            </article>
+
+            <footer>
+                <h id="connect">
+                    Let's connect !
+                </h>
+                
+                <div id="SMdiv">
+                    <a href=""><i class="fab fa-facebook"></i></a> |
+                    <a href=""><i class="fab fa-instagram-square"></i></a> |
+                    <a href=""><i class="fab fa-twitter"></i></a> |
+                    <a href=""><i class="fas fa-envelope"></i></a> 
+                </div>
+        
+                <h id="protection">
+                    Privacy Policy | Terms of service 
+                </h>
+        
+                <h id="copyright">
+                    Copyright &copy; GetDget. All Rights Reseerved
+                </h>
+            </footer>
+        </main>
+
+    </body>
+
+</html>
